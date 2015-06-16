@@ -1,0 +1,89 @@
+html > body > .component-account-entry-page {
+  .container {
+    .row {
+      margin-top: 70px;
+      .content {
+        float: none;
+        margin: 0 auto;
+        padding: 50px 70px;
+        border: 1px solid #dfe5e9;
+        .form-group {
+          margin-bottom: 30px;
+          .form-control {
+            margin: 0;
+            width: 100%;
+            color: #9aa7af;
+            height: inherit;
+            font-size: 0.9em;
+            box-shadow: none;
+            font-weight: 300;
+            border-radius: 0;
+            padding: 8px 15px;
+            font-family: "Lato";
+            border: 1px solid #dfe5e9;
+            background-color: transparent;
+            &:hover {
+              border-color: @primaryColor;
+            }
+          }
+        }
+        .action-section {
+          text-align: right;
+          .change-page,
+          .button-register {
+            color: #9aa7af;
+            font-size: 0.9em;
+            line-height: 30px;
+            margin-right: 10px;
+            font-family: "Lato";
+            &:hover {
+              color: @primaryColor;
+            }
+          }
+          .change-page {
+            float: left;
+          }
+          .button-register {
+            color: #4691bf;
+            text-decoration: underline;
+            &:hover {
+              color: @fourthColor;
+            }
+          }
+          .submit-date {
+            font-size: 0.9em;
+            padding: 5px 29px;
+            font-family: "Lato";
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .container {
+      padding-top: 150px;
+      .row {
+        padding: 0 15px;
+        margin-top: 30px;
+        .content {
+          padding: 30px 15px 20px 15px;
+          .action-section {
+            text-align: center;
+            .change-page ,
+            .submit-date ,
+            .button-register {
+              float: none;
+              margin: 0 auto;
+              display: block;
+              &.change-page ,
+              &.button-register{
+                margin-bottom: 10px;
+                line-height: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

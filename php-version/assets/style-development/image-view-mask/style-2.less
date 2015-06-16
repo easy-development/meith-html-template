@@ -1,0 +1,116 @@
+.image-view-mask.image-view-mask-2 {
+  > img {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  > .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    > h2 {
+      -webkit-transform: translate(200px, -200px);
+      -moz-transform: translate(200px, -200px);
+      -o-transform: translate(200px, -200px);
+      -ms-transform: translate(200px, -200px);
+      transform: translate(200px, -200px);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    > p {
+      -webkit-transform: translate(-200px, 200px);
+      -moz-transform: translate(-200px, 200px);
+      -o-transform: translate(-200px, 200px);
+      -ms-transform: translate(-200px, 200px);
+      transform: translate(-200px, 200px);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    > a.info {
+      -webkit-transform: translate(0px, 100px);
+      -moz-transform: translate(0px, 100px);
+      -o-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+      transform: translate(0px, 100px);
+      -webkit-transition: all 0.2s 0.1s ease-in-out;
+      -moz-transition: all 0.2s 0.1s ease-in-out;
+      -o-transition: all 0.2s 0.1s ease-in-out;
+      -ms-transition: all 0.2s 0.1s ease-in-out;
+      transition: all 0.2s 0.1s ease-in-out;
+    }
+  }
+
+  &:hover {
+    > .mask {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+
+      > h2 {
+        -webkit-transform: translate(0px,0px);
+        -moz-transform: translate(0px,0px);
+        -o-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+        transform: translate(0px,0px);
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        -ms-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+      }
+
+      > p {
+        -webkit-transform: translate(0px,0px);
+        -moz-transform: translate(0px,0px);
+        -o-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+        transform: translate(0px,0px);
+        -webkit-transition-delay: 0.4s;
+        -moz-transition-delay: 0.4s;
+        -o-transition-delay: 0.4s;
+        -ms-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+      }
+
+      > a.info {
+        -webkit-transform: translate(0px,0px);
+        -moz-transform: translate(0px,0px);
+        -o-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+        transform: translate(0px,0px);
+        -webkit-transition-delay: 0.5s;
+        -moz-transition-delay: 0.5s;
+        -o-transition-delay: 0.5s;
+        -ms-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+html > body > .component-separator-notification {
+  position: relative;
+  background-color: @fourthColor;
+  .full-background("../image/_separator-notification-background.png");
+
+  .container {
+    .row {
+      .carousel {
+        .item {
+          opacity: 0;
+          -webkit-transition-property: opacity;
+          -moz-transition-property: opacity;
+          -o-transition-property: opacity;
+          transition-property: opacity;
+          &.active {
+            opacity: 1;
+            &.left, &.right {
+              left: 0;
+              opacity: 0;
+              z-index: 1;
+            }
+          }
+          .date-author {
+            width: 170px;
+            margin: 0 auto;
+            text-align: center;
+            img {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+            .name {
+              margin: 0;
+              color: #ffffff;
+              font-size: 1.1em;
+              font-weight: 700;
+              font-family: 'Lato';
+            }
+          }
+          .content-quotation {
+            padding: 50px 30px;
+            position: relative;
+            border: 1px solid #ffffff;
+            p {
+              margin: 0;
+              font-size: 1.1em;
+              font-weight: 100;
+              font-style: italic;
+              color: #ffffff;
+            }
+            span.arrow-quotation {
+              top: 75%;
+              left: -6px;
+              width: 8px;
+              height: 17px;
+              position: absolute;
+              background: url("../image/arrow-notification-in-left.png") 0 50% no-repeat;
+            }
+          }
+        }
+        .carousel-indicators {
+          padding: 0;
+          width: auto;
+          top: inherit;
+          left: inherit;
+          right: inherit;
+          bottom: inherit;
+          position: inherit;
+          text-align: right;
+          margin: 0 15px 0 0;
+          li {
+            width: 15px;
+            height: 15px;
+            border-radius: 0;
+            margin: 0 0 0 1px;
+            border: 3px solid #ffffff;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .background-color-primary {
+      display: none;
+    }
+    .container {
+      .row {
+        .carousel {
+          .item {
+            .date-author {
+              margin-bottom: 30px;
+              .name {
+                color: @primaryTextColor;
+              }
+            }
+            .content-quotation {
+              span.arrow-quotation {
+                left: 0;
+                right: 0;
+                top: -6px;
+                width: 17px;
+                height: 8px;
+                margin: 0 auto;
+                background: url("../image/arrow-notification-in-top.png") 0 0 no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+html > body > .component-contact {
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .container {
+    .row {
+      #responsive_map {
+        width: 100%;
+        height: 350px;
+        background: #e9e9e9;
+      }
+      .form {
+        padding: 0;
+        .contain-input,
+        .contain-text-area {
+          margin-top: 50px;
+          input,
+          textarea {
+            box-shadow: none;
+            padding: 8px 13px;
+            background: #e9e9e9;
+            margin-bottom: 20px;
+            width: 100% !important;
+            color: @fourthTextColor;
+            border: 1px solid transparent;
+            &:hover {
+              border-color: @secondaryColor;
+            }
+            &:focus {
+              border-color: @primaryColor;
+            }
+          }
+          textarea {
+            min-height: 149px;
+          }
+          button {
+            font-weight: 700;
+            padding: 6px 30px;
+            background: transparent;
+            color: @primaryTextColor;
+            border: 2px solid @primaryColor;
+            &:hover {
+              box-shadow: 0 0 10px 1px @primaryColor;
+            }
+          }
+        }
+      }
+
+      .contact-details {
+        padding: 40px 30px;
+        background: @fourthColor;
+        .title{
+          margin: 0;
+          color: #ffffff;
+          font-size: 30px;
+          margin-bottom: 6px;
+          font-family: "Gotham";
+
+        }
+        .sub-title{
+          margin: 0;
+          color: #ffffff;
+          font-size: 16px;
+          padding-right: 20px;
+          padding-bottom: 5px;
+          display: inline-block;
+          font-family: "Gotham";
+          border-bottom: 2px solid #ffffff;
+        }
+        .content{
+          margin-top: 30px;
+          p {
+            margin: 0;
+            color: #ffffff;
+            font-family: "Lato";
+            margin-bottom: 30px;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .container {
+      .row {
+        .contact-details {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .container {
+      .row {
+        #map_canvas {
+          margin-top: 60px;
+        }
+        .form {
+          .contain-text-area {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+html > body > .component-skills {
+  .content {
+    padding: 77px 0;
+    position: relative;
+    .line-skills {
+      .minimum,
+      .maximum {
+        margin: 0;
+        float: left;
+        font-weight: 700;
+        color: @primaryColor;
+        padding: 8px 0;
+      }
+      .minimum {
+        float: left;
+        margin-right: 4px;
+        padding-right: 25px;
+        border-right: 1px solid @secondaryColor;
+      }
+      .maximum {
+        float: right;
+        margin-left: 4px;
+        padding-left: 25px;
+        border-left: 1px solid @secondaryColor;
+      }
+      .bar-line-skills {
+        width: 81.7%;
+        height: 1px;
+        float: left;
+        margin: 17px 0;
+        background: @secondaryColor;
+      }
+    }
+    .skill-element {
+      top: 0;
+      display: block;
+      position: absolute;
+      &.top {
+        top: 0;
+        bottom: inherit;
+      }
+      &.bottom {
+        bottom: 0;
+        top: inherit;
+        .min-line-to-line-skills {
+          margin-top: -20px;
+          margin-bottom: 5px;
+        }
+      }
+      &.right {
+        .squares-in-square {
+          float: left;
+        }
+        .text-contain {
+          float: left;
+          text-align: right;
+          padding-right: 18px;
+        }
+      }
+      &.left {
+        .squares-in-square {
+          float: right;
+        }
+        .text-contain {
+          float: right;
+          text-align: left;
+          padding-left: 18px;
+        }
+      }
+      .squares-in-square {
+        float: left;
+        .number {
+          font-size: 1.4em;
+        }
+      }
+      .text-contain {
+        float: left;
+        padding: 17px 0;
+        text-align: right;
+        padding-right: 18px;
+        .title {
+          margin: 0;
+          font-size: 1.1em;
+          font-weight: 700;
+          color: @primaryTextColor;
+        }
+        .subtitle {
+          margin: 0;
+          color: #7b7f82;
+          font-size: 0.8em;
+          text-transform: uppercase;
+        }
+      }
+      .min-line-to-line-skills {
+        width: 1px;
+        height: 16px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 8px;
+        background: @secondaryColor;
+      }
+    }
+    .percent-21 {
+      left: 100px;
+    }
+    .percent-45 {
+      left: 28%;
+    }
+    .percent-65 {
+      left: 38%;
+    }
+    .percent-86 {
+      left: 67%;
+    }
+    .percent-98 {
+      left: 67%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .content {
+      .line-skills {
+        .bar-line-skills {
+          width: 77.7%;
+        }
+      }
+    }
+  }
+  @media all and (max-width: @smScreenSizeMax) and (min-width: @xsScreenSizeMax) {
+    .content {
+      .line-skills {
+        float: left;
+        text-align: center;
+        display: inline-block;
+        .minimum,
+        .maximum {
+          margin: 0;
+          float: none;
+          padding: 8px 0;
+        }
+        .minimum {
+          border: none;
+          border-bottom: 1px solid @secondaryColor;
+        }
+        .maximum {
+          border: none;
+          border-top: 1px solid @secondaryColor;
+        }
+        .bar-line-skills {
+          width: 1px;
+          float: none;
+          height: 500px;
+          margin: 0 auto;
+          display: block;
+          margin-top: 17px;
+          margin-bottom: 17px;
+        }
+      }
+
+      .skill-element,
+      .skill-element.top,
+      .skill-element.left,
+      .skill-element.right,
+      .skill-element.bottom {
+        float: left;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        display: block;
+        bottom: inherit;
+        position: inherit;
+        margin-top: 37px;
+        margin-right: 30%;
+        .min-line-to-line-skills {
+          display: none;
+        }
+        .squares-in-square {
+          float: right;
+        }
+        .text-contain {
+          float: right;
+          text-align: left;
+          padding-left: 18px;
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .content {
+      padding-left: 15px;
+      padding-right: 15px;
+      .line-skills {
+        display: none;
+      }
+
+      .skill-element,
+      .skill-element.top,
+      .skill-element.left,
+      .skill-element.right,
+      .skill-element.bottom {
+        float: none;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        display: block;
+        bottom: inherit;
+        position: inherit;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .min-line-to-line-skills {
+          display: none;
+        }
+        .squares-in-square {
+          float: none;
+          margin: 0 auto;
+        }
+        .text-contain {
+          float: none;
+          text-align: center;
+          padding: 0 0 10px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+html > body > .component-header {
+  overflow: visible;
+  position: relative;
+  background: @fourthColor;
+  div {
+    .easy-transition(all 1s ease);
+  }
+
+  /* START COMPONENT HEADER HOMEPAGE */
+  &.component-header-homepage {
+    &.component-header-homepage-tiny {
+      .component-navigation {
+        .navbar {
+          .navbar-header{
+            .navbar-brand {
+              &.logo-text {
+                margin: 12px 15px;
+                font-size: 1.1em;
+                span {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .contain-titles {
+        display: none;
+
+        span {
+          display: none;
+        }
+      }
+    }
+    .background-color-primary {
+      .full-background ("../image/_backgroud-slider-navigation-logo.png")
+    }
+    .background-color-fourth {
+      .full-background ("../image/_backgroud-slider-navigation.png");
+    }
+    .component-navigation {
+      &.fixed {
+        .navbar {
+          .navbar-header {
+            .navbar-brand {
+              &.logo-text {
+                margin: 12px 15px;
+                font-size: 1.1em;
+                span {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .navbar {
+        .navbar-header {
+          .navbar-brand {
+            margin: 275px 15px;
+            font-size: 1.35em;
+            span {
+              font-size: 41px;
+            }
+          }
+        }
+      }
+    }
+    .contain-titles {
+      display: block;
+    }
+  }
+  /* END COMPONENT HEADER HOMEPAGE */
+
+  .background-color-primary {
+    .full-background ("../image/_backgroud-navigation-logo.png")
+  }
+  .background-color-fourth {
+    .full-background ("../image/_backgroud-navigation.png");
+  }
+  .contain-titles {
+    float: left;
+    display: none;
+    margin: 198px 0 0 22%;
+    p {
+      margin: 0;
+      color: #ffffff;
+      font-size: 48px;
+      position: relative;
+      text-transform: uppercase;
+    }
+    .first {
+      font-weight: 100;
+    }
+    .second {
+      font-weight: 300;
+    }
+    .third {
+      float: left;
+      font-weight: 700;
+      position: relative;
+      span {
+        width: 10px;
+        right: -20px;
+        height: 10px;
+        bottom: 16px;
+        position: absolute;
+        background: @primaryColor;
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .background-color-primary {
+      display: none;
+    }
+    .background-color-fourth {
+      width: 100%;
+    }
+    &.component-header-homepage{
+      .component-navigation {
+        .navbar {
+          .navbar-header{
+            .navbar-brand {
+              &.logo-text {
+                margin: 0 15px;
+                font-size: 1.1em;
+                span {
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

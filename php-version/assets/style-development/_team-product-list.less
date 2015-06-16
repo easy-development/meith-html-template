@@ -1,0 +1,163 @@
+.component-team-product-list {
+  .product-list-wrapper {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    .filter {
+      .select-view {
+        float: right;
+        margin: 0 15px 15px 0;
+        a {
+          margin-left: 10px;
+          &.active {
+            cursor: default;
+            span {
+              color: @primaryColor;
+            }
+          }
+          span {
+            color: @fourthColor;
+          }
+        }
+      }
+    }
+    .content {
+      .row {
+        .item {
+          margin-bottom: 30px;
+          &:hover {
+            .contain-image {
+              img {
+                box-shadow: 0 0 0 2px @primaryColor;
+              }
+            }
+            .contain-details {
+              background: #EBECEC;
+            }
+          }
+          .contain-image {
+            background: #3b4d56;
+            img {
+              width: 100%;
+            }
+          }
+          .contain-details {
+            overflow: hidden;
+            position: relative;
+            background: #f0f5f8;
+            padding: 30px 60px 0 30px;
+            .name {
+              color: #5b6171;
+              font-size: 1.7em;
+              font-weight: 700;
+              margin: 0 0 20px 0;
+              font-family: "Lato";
+              .speciality-min {
+                margin-left: 5px;
+                font-size: 0.5em;
+                font-weight: 300;
+                font-family: "Lato";
+              }
+            }
+            .social-media {
+              margin: 0 0 20px 0;
+              li {
+                margin: 0 4px;
+                display: inline-block;
+                &:hover {
+                  a {
+                    span {
+                      color: @primaryColor;
+                    }
+                  }
+                }
+                a {
+                  display: block;
+                  span {
+                    color: #d2d7dd;
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+            .speciality ,
+            .description {
+              display: block;
+              margin-bottom: 10px;
+              .name-section {
+                float: left;
+                color: #5b5f6a;
+                min-width: 100px;
+                font-weight: 700;
+                font-family: "Lato";
+              }
+              .details {
+                overflow: hidden;
+                p {
+                  float: left;
+                  font-weight: 300;
+                  font-size: 0.85em;
+                  font-family: "Lato";
+                }
+              }
+            }
+            .final-border {
+              bottom: 0;
+              width: 170px;
+              position: absolute;
+              span {
+                width: 100%;
+                height: 5px;
+                display: block;
+                background: @primaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .product-list-wrapper {
+      .content {
+        .row {
+          .item {
+            margin-bottom: 50px;
+            .contain-image {
+              margin-bottom: 30px;
+            }
+            .contain-details {
+              text-align: center;
+              padding: 30px 30px 0 30px;
+              .name {
+                .speciality-min {
+                  display: block;
+                  margin-top: 3px;
+                }
+              }
+              .speciality ,
+              .description {
+                display: block;
+                margin-bottom: 10px;
+                .name-section {
+                  float: none;
+                  margin-bottom: 5px;
+                }
+                .details {
+                  overflow: hidden;
+                  p {
+                    float: none;
+                  }
+                }
+              }
+              .final-border {
+                left: 30px;
+                right: 30px;
+                width: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

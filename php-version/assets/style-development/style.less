@@ -1,0 +1,85 @@
+@import "bootstrap.min.less";
+@import "font-awesome.less";
+@import "flaticon.less";
+@import "hint.less";
+@import "animate.less";
+@import "story-zen.less";
+@import "settings.less";
+@import "functions.less";
+@import "general.less";
+@import "framework-theme.less";
+@import "chosen.less";
+@import "font.less";
+
+html, body {
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+/** Component CSS, will move in different File **/
+
+.component-container-slider {
+
+  [data-container-slider-image-container] {
+    cursor: pointer;
+  }
+
+  [data-container-slider-image-container] {
+    &.touch-active {
+      -webkit-transition : none;
+      -moz-transition    : none;
+      -o-transition      : none;
+      transition         : none;
+    }
+
+    -webkit-transition : all 1.0s ease-in-out;
+    -moz-transition    : all 1.0s ease-in-out;
+    -o-transition      : all 1.0s ease-in-out;
+    transition         : all 1.0s ease-in-out;
+  }
+
+}
+
+/** General **/
+@import "widgets.less";
+@import "_footer.less";
+@import "_our-partners.less";
+@import "_price-table.less";
+@import "_team-row.less";
+@import "_skills.less";
+@import "_about-page.less";
+@import "_portfolio.less";
+@import "_navigation.less";
+@import "_header.less";
+@import "_image-view-mask.less";
+
+@import "_separator-achievements.less";
+@import "_separator-notification.less";
+@import "_separator-technologies-used.less";
+
+@import "_contact.less";
+
+@import "_shop-cart.less";
+@import "_shop-checkout.less";
+@import "_shop-container.less";
+@import "_shop-product-list.less";
+@import "_shop-product-grid.less";
+@import "_shop-product-detail.less";
+@import "_shop-bookmark-list.less";
+
+@import "_blog-post-list.less";
+@import "_blog-sidebar.less";
+@import "_blog-item-post.less";
+
+@import "_portfolio-list.less";
+@import "_portfolio-single.less";
+
+@import "_team-product-grid.less";
+@import "_team-product-list.less";
+
+@import "_account-entry-page.less";
+
+@import "_road-map.less";

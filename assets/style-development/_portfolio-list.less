@@ -1,0 +1,66 @@
+html > body > .component-portfolio-list {
+  .container {
+    .row {
+      margin-bottom: 70px;
+      li {
+        margin-bottom: 30px;
+        .image-view-mask {
+          display: block;
+          overflow: hidden;
+          position: relative;
+          text-align: center;
+          img {
+            width: 100%;
+          }
+          .hover-image {
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            position: absolute;
+            background: @primaryColorOpacity95;
+            p, a {
+              color: #ffffff;
+              text-transform: uppercase;
+            }
+            .title {
+              font-size: 1.5em;
+              span {
+                width: 17px;
+                height: 17px;
+                margin-right: 5px;
+                background: #ffffff;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+    .selection-page {
+      text-align: center;
+      .pagination {
+        margin: 0;
+        li {
+          a {
+            color: #909da5;
+            font-size: 0.9em;
+            border-radius: 0;
+            font-family: "Lato";
+            border-color: #dfe5e9;
+            span {
+              font-size: 12px;
+            }
+          }
+          &:hover ,
+          &.active {
+            a {
+              color: #ffffff;
+              background: @primaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

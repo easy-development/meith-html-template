@@ -1,0 +1,193 @@
+html > body > .component-road-map {
+  .container {
+    padding: 70px 0 150px 0;
+    .title-account-recover {
+      margin-bottom: 60px;
+    }
+    .row {
+      .top {
+        text-align: center;
+        .button-go-bottom {
+          display: block;
+          margin-top: 70px;
+          a {
+            &:hover {
+             span {
+               color: @fourthColor;
+             }
+            }
+            span {
+              color: @primaryColor;
+              &:before {
+                font-size: 80px;
+              }
+            }
+          }
+        }
+      }
+      .content {
+        .media {
+          &.position-right {
+            text-align: right;
+          }
+          .pull-left {
+            margin-right: 15px;
+          }
+          .pull-right {
+            margin-left: 15px;
+          }
+          .media-body {
+            padding-top: 45px;
+            &.min-contain {
+              padding-top: 10px;
+            }
+            p {
+              font-size: 1.1em;
+              line-height: 1.2em;
+              font-family: "Lato";
+            }
+            .title {
+              font-weight: 700;
+              margin-bottom: 15px;
+              color: @primaryColor;
+            }
+            .description {
+              margin: 0;
+              color: #4c7699;
+              font-weight: 100;
+            }
+          }
+        }
+        .trail-map-1 {
+          margin-top: -30px;
+          text-align: right;
+          padding-right: 70px;
+        }
+        .trail-map-2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .trail-map-3 {
+          text-align: right;
+          margin: 30px 0 20px 0;
+        }
+        .trail-map-4 {
+          text-align: right;
+          margin-top: -30px;
+        }
+        .trail-map-5 {
+          text-align: right;
+          padding: 120px 40px 0 0;
+        }
+      }
+      .section-buttons {
+        padding-top: 70px;
+        text-align: center;
+        .btn {
+          margin: 5px;
+          height: 50px;
+          padding: 0 10px;
+          font-size: 1.1em;
+          min-width: 230px;
+          font-weight: 900;
+          line-height: 50px;
+          font-family: "Lato";
+          text-transform: uppercase;
+          &.btn-third {
+            background: #282e34;
+            border: 1px solid #282e34;
+            &:hover {
+              color: #282e34;
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .container {
+      .row {
+        .content {
+          .media {
+            .media-body {
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .container {
+      .row {
+        .content {
+          .trail-map-2 ,
+          .trail-map-3 ,
+          .trail-map-4 {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+          }
+          .trail-map-1 {
+            padding-bottom: 20px;
+          }
+          .trail-map-5 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .container {
+      padding: 130px 0;
+      .row {
+        .top {
+          img {
+            width: 100%;
+          }
+        }
+        .content {
+          .media {
+            text-align: center;
+            padding-top: 130px;
+            background-position: 50% 15px;
+            background-repeat: no-repeat;
+            background-image: url("../image/road-map-trail-min-map.png");
+            &.position-right {
+              text-align: center;
+            }
+            .pull-left ,
+            .pull-right {
+              margin: 0;
+              margin-bottom: 20px;
+              float: none !important;
+              img {
+                display: inline;
+              }
+            }
+            .media-body {
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .trail-map-1 ,
+          .trail-map-2 ,
+          .trail-map-3 ,
+          .trail-map-4 ,
+          .trail-map-5 {
+            display: none;
+          }
+        }
+        .section-buttons {
+          .btn {
+            width: 100%;
+            margin: 5px 0;
+            min-width: inherit;
+          }
+        }
+      }
+    }
+  }
+}

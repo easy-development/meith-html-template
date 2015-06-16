@@ -1,0 +1,92 @@
+html > body > .component-portfolio {
+  background: @fourthColor;
+  > div {
+    float: left;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .contain-left {
+    width: 28.5%;
+  }
+  .contain-center {
+    width: 43%;
+    .top-left ,
+    .bottom-left {
+      float: left;
+      width: 48.08%;
+    }
+    .top-right ,
+    .bottom-right {
+      float: left;
+      width: 51.92%;
+    }
+    .contain-title {
+      text-align: center;
+      background-color: @fourthColor;
+      h1 {
+        margin: 0;
+        clear: both;
+        color: #ffffff;
+        padding: 47px 0;
+        font-size: 4.3em;
+        text-transform: uppercase;
+        .full-background ("../image/portfolio-background-title.png");
+      }
+    }
+    .contain-sub-title {
+      width: 51.9%;
+      float: right;
+      text-align: center;
+      background-color: @primaryColor;
+      h2 {
+        margin: 0;
+        clear: both;
+        color: #ffffff;
+        padding: 22px 0;
+        font-size: 2.6em;
+        text-transform: uppercase;
+        .full-background ("../image/portfolio-background-sub-title.png");
+      }
+    }
+
+  }
+  .contain-right {
+    width: 28.5%;
+  }
+  @media (max-width: 1200px) {
+    .contain-center {
+      .contain-title {
+        h1 {
+          font-size: 3em;
+          padding: 26px 0;
+        }
+      }
+      .contain-sub-title {
+        h2 {
+          font-size: 2em;
+          padding: 10px 0;
+        }
+      }
+
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .contain-center {
+      .contain-title {
+        h1 {
+          font-size: 2em;
+          padding: 26px 0;
+        }
+      }
+      .contain-sub-title {
+        h2 {
+          font-size: 1.1em;
+          padding: 10px 0;
+        }
+      }
+
+    }
+  }
+}

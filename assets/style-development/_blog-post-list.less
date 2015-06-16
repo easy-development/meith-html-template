@@ -1,0 +1,268 @@
+html > body .component-blog-post-list {
+  .title-blog {
+    color: #2b3336;
+    font-weight: 100;
+    font-size: 1.45em;
+    margin: 0 0 25px 0;
+    font-family: "Lato";
+    text-transform: uppercase;
+  }
+  .article-posted {
+    margin-bottom: 30px;
+    &:hover {
+      .container-informed-post {
+        .title-post {
+          color: @primaryColor;
+        }
+      }
+    }
+    .container-image-or-video {
+      display: block;
+      overflow: hidden;
+      max-height: 430px;
+      position: relative;
+      background: #e8e8e8;
+      img {
+        width: 100%;
+      }
+      &.multiple-images {
+        img {
+          float: left;
+        }
+        .big-image {
+          width: 72%;
+          float: left;
+          height: 100%;
+          overflow: hidden;
+        }
+        .small-image {
+          float: left;
+          height: 50%;
+          width: 27.9%;
+          overflow: hidden;
+        }
+      }
+      .type-posts {
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        background: rgba(246,101,48,0.9);
+        span {
+          color: #ffffff;
+          font-size: 20px;
+          line-height: 50px;
+          &:before {
+            font-size: 26px;
+          }
+        }
+      }
+      .time-posts {
+        left: 0;
+        bottom: 0;
+        width: 70px;
+        height: 70px;
+        padding-top: 18px;
+        position: absolute;
+        text-align: center;
+        background: @primaryColorOpacity90;
+        .day ,
+        .day span,
+        .month {
+          margin: 0;
+          color: #ffffff;
+          font-family: "Lato";
+        }
+        .day {
+          font-size: 2.15em;
+          line-height: 0.8em;;
+          span {
+            line-height: 0;
+            font-size: 10px;
+            font-weight: 100;
+            padding-left: 2px;
+            position: absolute;
+          }
+        }
+        .month {
+          font-size: 1.1em;
+          font-weight: 100;
+        }
+      }
+    }
+    .container-informed-post {
+      .title-post {
+        color: #2b3336;
+        display: block;
+        font-size: 30px;
+        font-weight: 100;
+        font-family: "Lato";
+        margin: 20px 0 15px 0;
+        text-transform: uppercase;
+      }
+      .general-details {
+        padding: 10px 0;
+        margin-bottom: 15px;
+        border-top: 1px solid #e6e6e6;
+        li {
+          color: #707475;
+          padding: 0 20px;
+          font-size: 0.9em;
+          font-weight: 100;
+          font-family: "Lato";
+          display: inline-block;
+          border-left: 1px solid #e6e6e6;
+          &:first-child {
+            padding-left: 0;
+            border-left: none;
+          }
+          span {
+            color: #c6c6c4;
+            padding-right: 8px;
+            &:before {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .description {
+        p {
+          color: #7c898c;
+          font-size: 1.1em;
+          font-weight: 100;
+          font-family: 'Lato';
+          margin-bottom: 25px;
+          .big-text {
+            float: left;
+            font-size: 42px;
+            line-height: 1em;
+            font-weight: 700;
+            padding-right: 10px;
+          }
+        }
+      }
+      .read-and-sharer {
+        padding: 10px 0;
+        margin-top: 15px;
+        border-top: 1px solid #e6e6e6;
+        .read {
+          font-size: 1.1em;
+          font-weight: 100;
+          font-family: "Lato";
+          color: @primaryTextColor;
+          &:hover {
+            text-decoration: underline;
+            span {
+              opacity: 1;
+              padding-left: 10px;
+            }
+          }
+          span {
+            opacity: 0;
+            margin-left: 0;
+          }
+        }
+        .sharer {
+          float: right;
+          li {
+            color: #707475;
+            padding: 0 15px;
+            font-size: 0.9em;
+            font-weight: 100;
+            font-family: "Lato";
+            display: inline-block;
+            border-left: 1px solid #e6e6e6;
+            &:first-child {
+              padding-left: 0;
+              border-left: none;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+            a {
+              &:hover {
+                span {
+                  color: @primaryColor;
+                }
+              }
+              span {
+                color: #536164;
+                &:before {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .select-direction {
+    display: block;
+    margin-top: 60px;
+    .next-page-of-items ,
+    .previous-page-of-items {
+      font-size: 16px;
+      font-weight: 700;
+      text-align: right;
+      font-family: "Lato";
+      color: @primaryTextColor;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+      span {
+        color: @secondaryTextColor;
+      }
+
+      &.next-page-of-items {
+        float: right;
+        &:hover {
+          span {
+            margin-right: -5px;
+            padding-left: 15px;
+          }
+        }
+        span {
+          padding-left: 10px;
+        }
+      }
+      &.previous-page-of-items {
+        float: left;
+        &:hover {
+          span {
+            margin-left: -5px;
+            padding-right: 15px;
+          }
+        }
+        span {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    & {
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid @fourthColor;
+      .article-posted {
+        .container-informed-post {
+          .general-details {
+            li {
+              display: block;
+              padding: 0 15px;
+              margin-bottom: 5px;
+              &:first-child {
+                padding: 0 15px;
+                border-left: 1px solid #e6e6e6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

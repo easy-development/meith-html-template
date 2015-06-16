@@ -1,0 +1,182 @@
+html > body > .component-portfolio-single {
+  .container {
+    .title {
+      color: #2b3336;
+      padding: 0 15px;
+      font-weight: 100;
+      font-size: 2.15em;
+      margin: 0 0 30px 0;
+      font-family: "Lato";
+      text-transform: uppercase;
+    }
+    .component-container-slider {
+      padding: 0 15px;
+      position: relative;
+      .image-view {
+        overflow: hidden;
+        max-height: 500px;
+        background: #e7e7e7;
+        margin-bottom: 10px;
+
+        > .image-view-container {
+          width              : 100%;
+
+          img {
+            display : block;
+            width   : 100%;
+            padding : 0;
+            margin  : 0;
+            float   : left;
+          }
+        }
+      }
+      .list-view-image {
+        margin: 0;
+        li {
+          &.active-image-item > a img {
+            opacity: 0.5;
+          }
+
+          float: left;
+          width: 16.66%;
+          padding: 0 10px 0 0;
+          &:last-child {
+            padding-right: 0;
+          }
+          a {
+            display: block;
+            overflow: hidden;
+            max-height: 120px;
+            background: #000000;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .control-slider {
+        top: 43%;
+        width: 40px;
+        height: 40px;
+        opacity: 0.75;
+        position: absolute;
+        text-align: center;
+        background-color: #2f373c;
+        &:hover {
+          opacity: 1;
+        }
+        &.left {
+          left: 30px;
+        }
+        &.right {
+          right: 30px;
+        }
+        span {
+          color: #ffffff;
+          font-size: 24px;
+          line-height: 40px;
+        }
+      }
+    }
+    .container-widget {
+      margin-top: 25px;
+      > div {
+        padding: 0;
+        .title-min {
+          color: #333333;
+          font-size: 1.1em;
+          margin: 0 0 15px 0;
+          font-family: "Lato";
+        }
+        .project-description {
+          display: block;
+          margin-bottom: 15px;
+          p {
+            margin: 0;
+            color: #99abb7;
+            font-size: 0.9em;
+            font-family: "Lato";
+          }
+        }
+        .share-project {
+          display: block;
+          ul {
+            margin: 0;
+            li {
+              float: left;
+              margin-right: 10px;
+              a {
+                width: 30px;
+                height: 30px;
+                display: block;
+                border-radius: 50%;
+                text-align: center;
+                background: #d7dbdd;
+                &:hover {
+                  background: @primaryColor;
+                  span {
+                    color: #ffffff;
+                  }
+                }
+                span {
+                  color: #6d7a83;
+                  line-height: 30px;
+                }
+              }
+            }
+          }
+        }
+        .project-details {
+          display: block;
+          ul {
+            margin: 0;
+            li {
+              margin-bottom: 10px;
+              span {
+                float: left;
+                color: #99abb7;
+                min-width: 100px;
+                font-size: 0.9em;
+                font-family: "Lato";
+              }
+              a {
+                color: #2f383d;
+                font-size: 0.9em;
+                font-family: "Lato";
+                &:hover {
+                  color: @primaryColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .container {
+      .component-container-slider {
+        margin-bottom: 50px;
+        .list-view-image {
+          li {
+            padding: 0 5px 10px 5px;
+            width: 33.33%;
+            &:last-child {
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+      .container-widget {
+        > div {
+          .project-description {
+            margin-bottom: 30px;
+          }
+          .share-project {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

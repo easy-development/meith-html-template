@@ -1,0 +1,23 @@
+.easy-transform(@translationX, @translationY, @rotation) {
+  -webkit-transform: translate(@translationX, @translationY) rotate(@rotation);
+  -moz-transform: translate(@translationX, @translationY) rotate(@rotation);
+  -o-transform: translate(@translationX, @translationY) rotate(@rotation);
+  -ms-transform: translate(@translationX, @translationY) rotate(@rotation);
+  transform: translate(@translationX, @translationY) rotate(@rotation);
+}
+
+.easy-transformX(@translationX, @rotation) {
+  -webkit-transform: translate(@translationX) rotate(@rotation);
+  -moz-transform: translate(@translationX) rotate(@rotation);
+  -o-transform: translate(@translationX) rotate(@rotation);
+  -ms-transform: translate(@translationX) rotate(@rotation);
+  transform: translate(@translationX) rotate(@rotation);
+}
+
+.easy-transition(@params) {
+  -webkit-transition: @params;
+  -moz-transition: @params;
+  -o-transition: @params;
+  -ms-transition: @params;
+  transition: @params;
+}

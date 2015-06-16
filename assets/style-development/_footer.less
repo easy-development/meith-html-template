@@ -1,0 +1,30 @@
+html > body > .component-footer {
+  position: relative;
+  background-color: @fourthColor;
+  .full-background ("../image/_backgroud-footer.png");
+  .container {
+    padding: 50px 0 30px 0;
+    .copyright {
+      margin-top: -70px;
+      p {
+        color: #ffffff;
+        font-size: 1.1em;
+        margin: 50px 0 0 0;
+      }
+    }
+    .first-element {
+      padding-left: 0;
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .background-color-primary {
+      display: none;
+    }
+    .container {
+      .copyright {
+        margin-top: 0;
+        text-align: center;
+      }
+    }
+  }
+}

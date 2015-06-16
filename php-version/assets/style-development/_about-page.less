@@ -1,0 +1,60 @@
+html > body > .component-about-page {
+  .container {
+    .row {
+      .icon-contain {
+        float: left;
+        .icon {
+          &:before {
+            font-size: 35px;
+          }
+        }
+      }
+      .text-contain {
+        float: left;
+        padding: 7px 0 0 15px;
+        p {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        .title {
+          color: @secondaryTextColor;
+          font-size: 1.7em;
+        }
+        .subtitle {
+          font-size: 0.85em;
+          color: @primaryColor;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    & {
+      .container {
+        .row {
+          > div {
+            .icon-contain {
+              float: none;
+              margin: 0 auto;
+            }
+            .text-contain {
+              float: none;
+              text-align: center;
+              padding: 10px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    & {
+      .container {
+        .row {
+          > div {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

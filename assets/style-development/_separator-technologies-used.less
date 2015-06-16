@@ -1,0 +1,182 @@
+html > body > .component-separator-technologies-used {
+  margin: 30px 0;
+  overflow: visible;
+  position: relative;
+  .full-background("../image/_separator-technologies-used-background.png");
+
+  .container {
+    .row {
+      div {
+        .title {
+          color: @fourthTextColor;
+          font-size: 1.1em;
+          font-weight: 700;
+          margin: 0 0 20px 0;
+          text-transform: uppercase;
+        }
+      }
+      .text {
+        .description {
+          font-size: 1.1em;
+          margin-bottom: 20px;
+          span {
+            color: @primaryTextColor;
+          }
+        }
+        ul {
+          li {
+            color: #6d7b7c;
+            font-size: 1.1em;
+            font-weight: 100;
+            margin-bottom: 8px;
+            span {
+              float: left;
+              margin-top: -3px;
+              padding-right: 5px;
+              color: @primaryColor;
+            }
+          }
+        }
+      }
+      .iphone-contain {
+        top: -110px;
+        position: absolute;
+      }
+      .used {
+        padding-top: 52px;
+        ul {
+          display: block;
+          li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 1px;
+            text-align: center;
+            &.icon-css {
+              background: @fourthColor;
+            }
+            &.icon-html {
+              background: @secondaryColor;
+            }
+            &.icon-php {
+              background: @primaryColor;
+            }
+            span:before {
+              color: #ffffff;
+              font-size: 50px;
+              line-height: 100px;
+            }
+            .flaticon-symbol:before {
+              font-size: 60px;
+            }
+          }
+        }
+        a.link-view {
+          float: left;
+          color: @fourthTextColor;
+          font-size: 1.1em;
+          margin-top: 20px;
+          text-transform: uppercase;
+          span.fa {
+            color: @fourthTextColor;
+            padding-left: 5px;
+          }
+          span {
+            font-weight: 700;
+            color: @primaryColor;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .container {
+      .row {
+        .used {
+          ul {
+            li {
+              width: 90px;
+              height: 90px;
+              span:before {
+                line-height: 90px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @smScreenSizeMax) {
+    .container {
+      .row {
+        .iphone-contain {
+          top: 0;
+          position: inherit;
+          img {
+            width: 100%;
+          }
+        }
+        .used {
+          ul {
+            li {
+              width: 70px;
+              height: 70px;
+              span:before {
+                line-height: 70px;
+                font-size: 30px;
+              }
+              .flaticon-symbol:before {
+                font-size: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: @xsScreenSizeMax) {
+    .container {
+      .row {
+        > div {
+          margin-bottom: 40px;
+          .title {
+            text-align: center;
+          }
+        }
+        .text {
+          ul {
+            li {
+              text-align: center;
+              span {
+                float: none;
+              }
+            }
+          }
+        }
+        .iphone-contain {
+          text-align: center;
+          img {
+            width: auto;
+            margin: 0 auto;
+          }
+        }
+        .used {
+          text-align: center;
+          ul {
+            li {
+              float: none;
+              display: inline-block;
+              .flaticon-symbol:before {
+                font-size: 30px;
+              }
+            }
+          }
+          a.link-view {
+            float: none;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

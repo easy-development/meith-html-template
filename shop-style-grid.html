@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meith - Shop Grid Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#scrollSpyMenu">
+
+    <!--========== START COMPONENT BODY LOADING ANIMATION ==========-->
+  <div class="component-body-loading-animation body-loading-animation-animate"></div>
+<!--========== END COMPONENT BODY LOADING ANIMATION ==========-->
+    <!--========== START COMPONENT HEADER ==========-->
+  <div class="component-header">
+    <div class="background-color-primary left"></div>
+    <div class="background-color-fourth right"></div>
+
+    <!--========== START COMPONENT NAVIGATION ==========-->
+  <div class="component-navigation">
+    <div class="container">
+      <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#meith-navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo-text" href="index.html">
+            <span>Meith</span>
+            Wave of Pixels
+          </a>
+        </div>
+                <div class="collapse navbar-collapse" id="meith-navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="portfolio-list.html">Portfolio</a></li>
+            <li ><a href="blog.html">Blog</a></li>
+            <li class="dropdown ">
+              <a href="team-style-grid.html" class="dropdown-toggle" data-toggle="dropdown">The Team</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="team-style-grid.html">Grid Style</a></li>
+                <li><a href="team-style-list.html">List Style</a></li>
+                <li><a href="team-style-list-department.html">List Style With Departments</a></li>
+                <li><a href="road-map.html">Road Map</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="shop-style-grid.html" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="shop-style-grid.html">Style Grid</a></li>
+                <li><a href="shop-style-list.html">Style List</a></li>
+                <li><a href="shop-single-product.html">Single Product</a></li>
+                <li><a href="shop-single-product-left-sidebar.html">Single Product Left Sidebar</a></li>
+                <li><a href="shop-single-product-right-sidebar.html">Single Product Right Sidebar</a></li>
+                <li><a href="shop-cart.html">Cart</a></li>
+                <li><a href="shop-checkout.html">Checkout</a></li>
+                <li><a href="shop-style-list-left-sidebar.html">List Style Left Sidebar</a></li>
+                <li><a href="shop-style-list-right-sidebar.html">List Style Right Sidebar</a></li>
+              </ul>
+            </li>
+            <li class="dropdown ">
+              <a href="account-login.html" class="dropdown-toggle" data-toggle="dropdown">Account</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="account-login.html">Login</a></li>
+                <li><a href="account-registration.html">Register</a></li>
+                <li><a href="account-recover-password.html">Recover Password</a></li>
+                <li><a href="shop-bookmark-list.html">Favorite Products</a></li>
+              </ul>
+            </li>
+            <li ><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+<!--========== END COMPONENT NAVIGATION ==========-->
+    <div class="clearfix"></div>
+  </div>
+<!--========== END COMPONENT HEADER ==========-->
+    <div class="container component-shop-container">
+      <!--========== START COMPONENT SHOP PRODUCT LIST GRID ==========-->
+<div class="component-shop-product-grid">
+  <div class="product-list-wrapper">
+    <div class="filter">
+      <div class="contain-dropdown">
+        <span class="name-dropdown">SHOW :</span>
+        <div class="dropdown">
+          <a data-toggle="dropdown" href="#">8<span class="fa fa-angle-down"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="#">4</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">12</a></li>
+            <li><a href="#">16</a></li>
+          </ul>
+        </div>
+        <span class="name-dropdown">SORT BY:</span>
+        <div class="dropdown">
+          <a data-toggle="dropdown" href="#">Default<span class="fa fa-angle-down"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="#">Default 1</a></li>
+            <li><a href="#">Default 2</a></li>
+            <li><a href="#">Default 3</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="select-view">
+        <a href="shop-style-list.html"><span class="fa fa-th-list"></span></a>
+        <a href="shop-style-grid.html" class="active"><span class="fa fa-th-large"></span></a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="content">
+      <div class="row" data-elegant-height="> div > .item > p.title">
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-1.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">125 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Shirt In Short Sleeve With Embossed
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-2.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price">205 &#36;</del>
+                <span class="current-price">179 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Smart Shirt In Short Sleeve With Cut And
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-3.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">235 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Polo Ralph Lauren Check Shirt with Short
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-4.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">115 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Polo Ralph Lauren Oxford Shirt in Slim Fit
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-5.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">325 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              River Island Suit Jacket
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-6.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price">205 &#36;</del>
+                <span class="current-price">105 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Noose & Monkey Skinny Fit Blazer
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-7.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">375 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Noose & Monkey Skinny Fit Blazer
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-8.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">235 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Reiss Suit Jacket In Slim Fit
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-9.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">485 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              River Island Suit Jacket
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-10.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price">205 &#36;</del>
+                <span class="current-price">204 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Selected Linen Mix Casual Suit Jacket
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-11.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">775 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              BOSS Orange Blazer in Jersey
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-12.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">155 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Esprit Lightweight Casual Blazer
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-1.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">125 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Shirt In Short Sleeve With Embossed
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-2.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price">205 &#36;</del>
+                <span class="current-price">179 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Smart Shirt In Short Sleeve With Cut And
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-3.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">235 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Polo Ralph Lauren Check Shirt with Short
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="item">
+            <div class="contain-image">
+              <img src="assets/image/shop-image-4.jpg" alt="shop-image" width="260" height="330"/>
+              <a href="shop-single-product.html" class="btn btn-primary">quick view</a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="rating-and-price">
+              <ul class="rating">
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li class="star-active"><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+                <li><span class="flaticon-star138"></span></li>
+              </ul>
+              <div class="price">
+                <del class="old-price"></del>
+                <span class="current-price">115 &#36;</span>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <p class="title">
+              Polo Ralph Lauren Oxford Shirt in Slim Fit
+            </p>
+            <div class="contain-buttons">
+              <a href="shop-cart.html" class="btn btn-third add-to-cart">Add to cart</a>
+              <a href="shop-bookmark-list.html" class="btn btn-third like"><span class="flaticon-heart15"></span></a>
+              <a href="shop-cart.html" class="btn btn-third add"><span class="flaticon-add46"></span></a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="selection-page">
+      <ul class="pagination">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="next-page"><a href="#"><span class="fa fa-angle-double-right"></span></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!--========== END COMPONENT SHOP PRODUCT LIST GRID ==========-->    </div>
+
+    <!--========== START COMPONENT FOOTER ==========-->
+  <div class="component-footer">
+    <div class="background-color-primary right"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9">
+          <div class="col-xs-12 col-sm-4 first-element">
+            <div class="widget-text-about">
+  <h3 class="title-widget-website">
+    <span>Meith</span>
+    website
+  </h3>
+  <p class="description">
+    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+    qui blandit erdiet doming id quod mazim placerat facer possim assum.
+  </p>
+  <a href="#" class="reed-more">LEAR MORE</a>
+  <div class="clearfix"></div>
+</div>          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="widget-tags">
+  <h3 class="title-widget">
+    Tags
+  </h3>
+  <ul>
+    <li><a href="#">Uumatis</a></li>
+    <li><a href="#">Sollemnes</a></li>
+    <li><a href="#">Commodo</a></li>
+    <li><a href="#">Mutatione</a></li>
+    <li><a href="#">Placat</a></li>
+    <li><a href="#">Humani</a></li>
+    <li><a href="#">Claritas</a></li>
+    <li><a href="#">Anteposuerit</a></li>
+    <li><a href="#">Consuetudium </a></li>
+    <li><a href="#">Molest</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</div>          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="widget-recent-post">
+  <h3 class="title-widget">
+    Recent Posts
+  </h3>
+  <ul class="media-list post">
+    <li class="media">
+      <a class="pull-left" href="blog-post.html">
+        <span class="cube"></span>
+        <img class="media-object" src="assets/image/widget-posted-recent-image-1.jpg" alt="widget-posted-recent-image-1">
+      </a>
+      <div class="media-body">
+        <p class="title-post">Fusce gravida tortor felis, ac dictum risus sagittis</p>
+        <p class="post-date">May 9, 2014</p>
+      </div>
+    </li>
+  </ul>
+  <ul class="media-list post">
+    <li class="media">
+      <a class="pull-left" href="blog-post.html">
+        <span class="cube"></span>
+        <img class="media-object" src="assets/image/widget-posted-recent-image-2.jpg" alt="widget-posted-recent-image-2">
+      </a>
+      <div class="media-body">
+        <p class="title-post">Fusce gravida tortor felis, ac dictum risus sagittis</p>
+        <p class="post-date">May 15, 2014</p>
+      </div>
+    </li>
+  </ul>
+  <ul class="media-list post">
+    <li class="media">
+      <a class="pull-left" href="blog-post.html">
+        <span class="cube"></span>
+        <img class="media-object" src="assets/image/widget-posted-recent-image-3.jpg" alt="widget-posted-recent-image-3">
+      </a>
+      <div class="media-body">
+        <p class="title-post">Fusce gravida tortor felis, ac dictum risus sagittis</p>
+        <p class="post-date">May 18, 2014</p>
+      </div>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 right-section">
+          <div class="widget-newsletter">
+  <h3 class="title-widget">
+    NewsLetter
+  </h3>
+  <p class="description">
+    Lorem ipsum dolor sit amet, sed diam nonummy nibh euismod tincidunt ut laore.
+  </p>
+  <form action="send">
+    <input type="email" class="form-control" placeholder="Enter your email adress">
+    <button class="btn btn-primary col-sm-6 col-xs-12" type="button">Subscribe</button>
+    <div class="clearfix"></div>
+  </form>
+  <ul class="social-list-vertical">
+    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+  </ul>
+  <div class="clearfix"></div>
+</div>        </div>
+        <div class="col-sm-12 col-md-6 copyright">
+          <p>Copyright &copy; 2014 - Designed by EasyDevelopment</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+<!--========== END COMPONENT FOOTER ==========-->
+    <script type="text/javascript" src="assets/scripts/jquery-1.10.2.js"></script>
+<script src="assets/scripts/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/scripts/retina.js" ></script>
+<script type="text/javascript" src="assets/scripts/template-helper-min.js"></script>
+  </body>
+</html>
